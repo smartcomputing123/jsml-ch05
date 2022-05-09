@@ -22,8 +22,8 @@ console.log(solver1.predict([120, 60]));
 console.log("Decolorizing images");
 console.log("==========================");
 
-['https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg', 'https://images.pexels.com/photos/132466/pexels-photo-132466.jpeg', 'https://images.pexels.com/photos/46231/water-lilies-pink-water-lake-46231.jpeg'].forEach(filename => {
+['landscape.jpeg', 'lily.jpeg', 'waterlilies.jpeg'].forEach(filename => {
     console.log("Decolorizing " + filename + '...');
-    decolorize(filename)
+    decolorize('./files/' + filename)
         .then(() => console.log(filename + " decolorized"));
 });
